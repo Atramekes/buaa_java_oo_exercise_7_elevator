@@ -1,8 +1,11 @@
+import com.oocourse.TimableOutput;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MainFunction {
     public static void main(String[] args) {
+        TimableOutput.initStartTimestamp();
         AllRequest all = new AllRequest();
         ArrayList<Integer> reachA = new ArrayList<>(Arrays.asList(
                 -3, -2, -1, 1, 15, 16, 17, 18, 19, 20));

@@ -12,7 +12,6 @@ public class Elevator extends Thread {
     private char name;
     private int speed;
     private int capacity;
-    private boolean specialTask;
     private ArrayList<Integer> reach;
     
     Elevator(AllRequest all, char nm, int sp, int cap, ArrayList<Integer> r) {
@@ -22,12 +21,10 @@ public class Elevator extends Thread {
         inputFinished = false;
         allRequest = all;
         status = 0;
-        TimableOutput.initStartTimestamp();
         name = nm;
         speed = sp;
         capacity = cap;
         reach = r;
-        specialTask = false;
     }
     
     void inputFinish() {

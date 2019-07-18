@@ -31,7 +31,7 @@ class People {
             if (el.isInA(toFloor)) {
                 this.toFloor = 1;
             } else {
-                if (floor <= toFloor) {
+                if ((floor <= toFloor && floor != 3) || (toFloor == 2)) {
                     this.toFloor -= 1;
                 } else {
                     this.toFloor += 1;
